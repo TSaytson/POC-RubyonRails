@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AppRails</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header>
+      Welcome to Rails Songs app
+    </header>
+
+    <%= t('hello') %>
+    <main class="container">
+      <%= yield %>
+    </main>
+
+    <footer>
+      <p>&copy; This is a copyright</p>
+    </footer>
+  </body>
+</html>
